@@ -26,6 +26,7 @@ Each dataset has two parts:
 - Real images: ./dataset/\<train;test;validation\>/Real
 - Fake images: ./dataset/\<train;test;validation\>/Fake
 
+The dataset need to be pre-processed to crop facial area.
 
 ## Training
 **Note**: Parameters with detail explanation could be found in the corresponding source code.
