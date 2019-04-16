@@ -123,7 +123,6 @@ if __name__ == "__main__":
             classes, class_ = capnet(x, random=opt.random)
 
             loss_dis = capsule_loss(classes, Variable(labels_data, requires_grad=False))
-            #loss_dis_data = loss_dis.data[0]
             loss_dis_data = loss_dis.item()
 
             loss_dis.backward()

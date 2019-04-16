@@ -184,7 +184,7 @@ class CapsuleNet(nn.Module):
         self.fea_ext = FeatureExtractor()
         self.fea_ext.apply(self.weights_init)
 
-        self.routing_stats = RoutingLayer(gpu_id, num_input_capsules=2, num_output_capsules=2, data_in=8, data_out=4, num_iterations=2)
+        self.routing_stats = RoutingLayer(gpu_id=gpu_id, num_input_capsules=3, num_output_capsules=2, data_in=8, data_out=4, num_iterations=2)
 
     def weights_init(self, m):
         classname = m.__class__.__name__
