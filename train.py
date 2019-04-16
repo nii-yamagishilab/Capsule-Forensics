@@ -25,7 +25,7 @@ import model
 
 
 parser = argparse.ArgumentParser()
-parser.add_argument('--dataset', default ='/dataset', help='path to root dataset')
+parser.add_argument('--dataset', default ='dataset', help='path to root dataset')
 parser.add_argument('--train_set', default ='train', help='train set')
 parser.add_argument('--val_set', default ='validation', help='validation set')
 parser.add_argument('--workers', type=int, help='number of data loading workers', default=1)
