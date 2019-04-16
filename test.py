@@ -28,7 +28,7 @@ parser.add_argument('--workers', type=int, help='number of data loading workers'
 parser.add_argument('--batchSize', type=int, default=100, help='input batch size')
 parser.add_argument('--imageSize', type=int, default=128, help='the height / width of the input image to network')
 parser.add_argument('--gpu_id', type=int, default=0, help='GPU ID')
-parser.add_argument('--outf', default='checkpoints', help='folder to output images and model checkpoints')
+parser.add_argument('--outf', default='checkpoints', help='folder to output model checkpoints')
 parser.add_argument('--random', action='store_true', default=False, help='enable randomness for routing matrix')
 parser.add_argument('--id', type=int, help='checkpoint ID')
 

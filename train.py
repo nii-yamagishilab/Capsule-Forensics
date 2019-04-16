@@ -36,7 +36,7 @@ parser.add_argument('--lr', type=float, default=0.0005, help='learning rate')
 parser.add_argument('--beta1', type=float, default=0.9, help='beta1 for adam')
 parser.add_argument('--gpu_id', type=int, default=0, help='GPU ID')
 parser.add_argument('--resume', type=int, default=0, help="choose a epochs to resume from (0 to train from scratch)")
-parser.add_argument('--outf', default='checkpoints', help='folder to output images and model checkpoints')
+parser.add_argument('--outf', default='checkpoints', help='folder to output model checkpoints')
 parser.add_argument('--disable_random', action='store_true', default=False, help='disable randomness for routing matrix')
 parser.add_argument('--manualSeed', type=int, help='manual seed')
 
