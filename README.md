@@ -30,12 +30,12 @@ Each dataset has two parts:
 ## Training
 **Note**: Parameters with detail explanation could be found in the corresponding source code.
 
-    $ python train.py
+    $ python train.py --dataset dataset --train_set train --val_set validation --outf checkpoints --batchSize 100 --niter 100
 
 ## Evaluating
 **Note**: Parameters with detail explanation could be found in the corresponding source code.
 
-    $ python test.py
+    $ python test.py --dataset dataset --test_set test --outf checkpoints --id <your selected id>
 
 ## Authors
 - Huy H. Nguyen (https://researchmap.jp/nhhuy/?lang=english)
