@@ -42,5 +42,8 @@ Each dataset has two parts:
 - Junichi Yamagishi (https://researchmap.jp/read0205283/?lang=english)
 - Isao Echizen (https://researchmap.jp/echizenisao/?lang=english)
 
+## Acknowledgement
+This work was supported by JSPS KAKENHI Grant Numbers (16H06302, 17H04687, 18H04120, 18H04112, 18KT0051) and by JST CREST Grant Number JPMJCR18A6, Japan.
+
 ## Reference
 H. H. Nguyen, J. Yamagishi, and I. Echizen, “Capsule-Forensics: Using Capsule Networks to Detect Forged Images and Videos,” Proc. of the 2019 International Conference on Acoustics, Speech, and Signal Processing (ICASSP 2019), 5 pages, (May 2019)
