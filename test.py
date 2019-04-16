@@ -72,7 +72,7 @@ if __name__ == '__main__':
     count = 0
     loss_test = 0
 
-    for img_data, labels_data in dataloader_test:
+    for img_data, labels_data in tqdm(dataloader_test):
 
         img_label = labels_data.numpy().astype(np.float)
 
@@ -108,10 +108,10 @@ if __name__ == '__main__':
 
     fpr, tpr, threshold = metrics.roc_curve(tol_label, tol_pred)
     fnr = 1 - tpr
-    hter = (fpr + fnr)/2
+    # hter = (fpr + fnr)/2
 
-    print('Test loss: %.4f | Test acc: %.2f | HTER: %.4f' % (loss_test, acc_test*100, hter))
-    text_writer.write('%.4f,%.2f,%.4f\n' % (loss_test, acc_test*100, hter))
+    print('Test loss: %.4f | Test acc: %.2f' % (loss_test, acc_test*100))
+    text_writer.write('%.4f,%.2f\n' % (loss_test, acc_test*100))
 
     text_writer.flush()
     text_writer.close()
