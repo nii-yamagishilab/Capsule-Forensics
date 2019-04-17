@@ -20,7 +20,9 @@ You can clone this repository into your favorite directory:
 - Checkpoint folder, where the training outputs will be stored:
 
       ./checkpoints
-      
+
+Pre-trained models for Face2Face and DeepFakes detection (with settings described in our paper) are provided in the checkpoints folder.
+
 ## Dataset
 Each dataset has two parts:
 - Real images: ./dataset/\<train;test;validation\>/Real
