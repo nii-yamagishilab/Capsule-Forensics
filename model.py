@@ -170,8 +170,12 @@ class RoutingLayer(nn.Module):
                 logits = logits + delta_logits
 
         # outputs[b, out_caps, 1, data_out, 1]
+        outputs = outputs.squeeze()
 
-        outputs = outputs.squeeze().transpose(2, 1).contiguous()
+        if len(outputs.shape) == 3:
+            outputs = outputs.transpose(2, 1).contiguous() 
+        else:
+            outputs = outputs.unsqueeze_(dim=0).transpose(2, 1).contiguous()
         # outputs[b, data_out, out_caps]
 
         return outputs
