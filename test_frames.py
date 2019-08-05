@@ -3,7 +3,7 @@ Copyright (c) 2018, National Institute of Informatics
 All rights reserved.
 Author: Huy H. Nguyen
 -----------------------------------------------------
-Script for testing Capsule-Forensics on video frames by aggregating the predicted probabilities 
+Script for testing Capsule-Forensics on videos level by aggregating the predicted probabilities of their frames
 """
 
 import sys
