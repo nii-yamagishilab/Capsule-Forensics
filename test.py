@@ -10,7 +10,6 @@ import sys
 sys.setrecursionlimit(15000)
 import os
 import torch
-import torch.backends.cudnn as cudnn
 import numpy as np
 from torch.autograd import Variable
 import torch.utils.data
@@ -110,7 +109,7 @@ if __name__ == '__main__':
     fnr = 1 - tpr
     # hter = (fpr + fnr)/2
 
-    print('Test loss: %.4f | Test acc: %.2f' % (loss_test, acc_test*100))
+    print('Test loss: %.4f | Test accuracy: %.2f' % (loss_test, acc_test*100))
     text_writer.write('%.4f,%.2f\n' % (loss_test, acc_test*100))
 
     text_writer.flush()
