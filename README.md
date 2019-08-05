@@ -38,7 +38,12 @@ The dataset need to be pre-processed to crop facial area.
 ## Evaluating
 **Note**: Parameters with detail explanation could be found in the corresponding source code.
 
+For testing on image level, using test.py
+
     $ python test.py --dataset dataset --test_set test --outf checkpoints --id <your selected id>
+    
+For testing on large images using patch aggregation strategy, please use `test_by_patches.py`
+For testing on video level by aggregating the predicted probabilities of video frames, please use `test_vid_lvl.py`
 
 ## Authors
 - Huy H. Nguyen (https://researchmap.jp/nhhuy/?lang=english)
