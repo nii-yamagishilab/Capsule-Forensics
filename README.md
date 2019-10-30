@@ -2,6 +2,8 @@
 
 Implementation of the paper:  <a href="https://arxiv.org/abs/1810.11215">Capsule-Forensics: Using Capsule Networks to Detect Forged Images and Videos</a> (ICASSP 2019).
 
+**UPDATE**: The **Capsule-Forensics-v2** has been released <a href="https://github.com/nii-yamagishilab/Capsule-Forensics-v2">here</a>, corresponding to this <a href="http://arxiv.org/abs/1910.12467">extended work</a>.
+
 You can clone this repository into your favorite directory:
 
     $ git clone https://github.com/nii-yamagishilab/Capsule-Forensics
